@@ -31,7 +31,9 @@ public class TemplateTest {
 abstract class Template{
     public void speedTime(){
         long start=System.currentTimeMillis();
-        code();//不确定的部分、易变的部分
+        for (int i=0;i<10;i++) {
+            code();//不确定的部分、易变的部分
+        }
         long end=System.currentTimeMillis();
         System.out.println("花费的时间是: "+(end-start));
     }
@@ -39,7 +41,7 @@ abstract class Template{
 }
 
 class SubTemplate extends Template{
-    public void code(){
+    public void code(){//遍历1000以内的质数
         for(int i = 2;i <= 1000;i++){
             boolean isFlag = true;
             for(int j = 2;j <= Math.sqrt(i);j++){

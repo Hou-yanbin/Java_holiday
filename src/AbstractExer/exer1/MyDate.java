@@ -9,8 +9,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @data 2021/2/21/12:31
  * @Description:
  **/
-/*
-（2）MyDate类包含:
+/*（2）MyDate类包含:
 private成员变量year,month,day ；
 toDateString()方法返回日期对应的字符串：xxxx年xx月xx日
  */

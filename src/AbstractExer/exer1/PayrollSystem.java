@@ -14,7 +14,9 @@ import java.util.Scanner;
  **/
 public class PayrollSystem {
     public static void main(String[] args) {
+
         Scanner scanner =new Scanner(System.in);
+        System.out.print("请输入月份:  ");
         int month=scanner.nextInt();
         Employee[] employees= new Employee[2]; //此时是声明了Employee类型的数组,不是newEmployee的对象,所以作为抽象类的Employee可以这样来创建Employee变量数组并初始化
         employees[0] =new SalariedEmployee("Jack",1,new MyDate(2016,5,21),8888);

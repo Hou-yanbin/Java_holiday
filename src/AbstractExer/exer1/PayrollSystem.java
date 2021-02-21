@@ -21,16 +21,15 @@ public class PayrollSystem {
         Employee[] employees= new Employee[2]; //此时是声明了Employee类型的数组,不是newEmployee的对象,所以作为抽象类的Employee可以这样来创建Employee变量数组并初始化
         employees[0] =new SalariedEmployee("Jack",1,new MyDate(2016,5,21),8888);
         employees[1] =new HourlyEmployee("Tom",2,new MyDate(2006,6,15),66,300);
-        for (int i=0;i<employees.length;i++){
-            if (month==employees[i].getBirthday().getMonth()){
-                double luncksalary=employees[i].earnings()+666;
-                System.out.println("本月是:"+employees[i].getName()+"的生日,获得666红包,奖后工资为:"+luncksalary);
-            }
-        }
+
         for (int i=0;i<employees.length;i++){
             System.out.println(employees[i].toString());
             double salary=employees[i].earnings();
             System.out.println("月工资为: "+salary);
+            if (month==employees[i].getBirthday().getMonth()){
+                double luncksalary=employees[i].earnings()+666;
+                System.out.println("本月是:"+employees[i].getName()+"的生日,获得666红包,奖后工资为:"+luncksalary);
+            }
         }
 
     }

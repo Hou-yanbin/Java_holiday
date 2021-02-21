@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @version v-1.8.0_131.
  * @auther Jack hou  Email:256595662@qq.com
  * @data 2021/2/21/12:31
- * @Description:（2）MyDate类包含:
+ * @Description: （2）MyDate类包含:
  * private成员变量year, month, day ；
  * toDateString()方法返回日期对应的字符串：xxxx年xx月xx日
  **/

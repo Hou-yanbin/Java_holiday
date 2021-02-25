@@ -11,6 +11,7 @@ import javax.xml.bind.SchemaOutputResolver;
 public class CommonEmployee extends Employee{
 
     public CommonEmployee() {
+
     }
 
     public CommonEmployee(String name, int id, double salary) {

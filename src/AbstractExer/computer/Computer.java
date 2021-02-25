@@ -1,6 +1,5 @@
 package AbstractExer.computer;
 
-
 /**
  * @version v-1.8.0_131.
  * @auther Jack hou  Email:256595662@qq.com
@@ -13,6 +12,7 @@ public class Computer {
         computer1 computer1=new computer1();
         computer1.transferData(new Flash());
         computer1.transferData(new Printer());
+     
     }
 }
 class computer1{

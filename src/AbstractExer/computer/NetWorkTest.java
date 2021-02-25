@@ -13,6 +13,7 @@ public class NetWorkTest {
         Server server=new Server();
         ProxyServer proxyServer = new ProxyServer(new Server());
         proxyServer.browse();
+
     }
 }
 interface NetWork{

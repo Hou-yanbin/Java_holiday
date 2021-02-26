@@ -172,10 +172,8 @@ package Projects.Bank.Bankexer;
 public class CustomerView {
     private CustomerList customers = new CustomerList(10);
     public CustomerView() {
-        Customer cust = new Customer("张三", '男', 30, "010-56253825",
-                "abc@email.com");
-        Customer cust1 = new Customer("张三", '男', 30, "010-56253825",
-                "abc@email.com");
+        Customer cust = new Customer("张三", '男', 30, "010-56253825", "abc@email.com");
+        Customer cust1 = new Customer("张三", '男', 30, "010-56253825", "abc@email.com");
         customers.addCustomer(cust);
         customers.addCustomer(cust1);
     }
